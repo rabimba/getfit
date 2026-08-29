@@ -24,7 +24,9 @@ async function loadKB() {
 
 function getWorker() {
   if (worker) return worker;
-  worker = new Worker("ai/worker.js");
+  // Module worker so `import("@huggingface/transformers")` works inside for Gemma 4
+  try { worker = new Worker("ai/worker.js", { type: "module" }); }
+  catch { worker = new Worker("ai/worker.js"); }
   worker.postMessage({ type: "init" });
   return worker;
 }

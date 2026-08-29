@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GetFit — Science-Based Fitness Planner</title>
   <link rel="stylesheet" href="styles.css" />
+  <!-- LiteRT + Transformers.js importmap for Gemma 4 (see AI_PLAN.md §2). Worker is a module worker. -->
+  <script type="importmap">
+  {
+    "imports": {
+      "@huggingface/transformers": "https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.4.1/dist/transformers.min.js"
+    }
+  }
+  </script>
 </head>
 <body>
   <header class="topbar">
