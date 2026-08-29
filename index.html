@@ -112,6 +112,22 @@
   </section>
 
 
+  <section id="coachPanel" class="panel coach-panel">
+    <div class="coach-head">
+      <h2>AI Coach <span class="badge">Gemma 4 · LiteRT · on-device</span></h2>
+      <button id="coachOpen" class="cta small" style="width:auto">Open coach</button>
+    </div>
+    <div class="coach-body">
+      <p class="hint">Chat with a local, evidence-grounded coach. It runs agentic tool calls (<code>computeTargets</code>, <code>retrieveEvidence</code>, <code>adjustPlan</code>, <code>generateWorkout</code>) via a LiteRT-based worker. In mock mode (no WebGPU/model) it still demonstrates the workflow.</p>
+      <div id="coachLog" class="coach-log results-empty">Try: “I stalled at 74 kg for 3 weeks and feel tired” or “make my workout harder”.</div>
+      <div class="coach-input">
+        <textarea id="coachInput" rows="2" placeholder="Describe what's happening — stall, hunger, fatigue, goal change…"></textarea>
+        <button id="coachSend" class="cta small" style="width:auto">Send</button>
+      </div>
+      <div class="note">LiteRT path: <code>ai/worker.js</code> loads Gemma 4 via LiteRT-LM.js (`.litertlm`) or Transformers.js ONNX when you add the runtime via importmap. See <a href="AI_PLAN.md" style="color:var(--accent-2)">AI_PLAN.md</a> §2–§4. All adjustments are clamped and cite evidence.</div>
+    </div>
+  </section>
+
   <section class="panel myth-panel">
     <h2>What this app deliberately ignores (and why)</h2>
     <ul id="mythList"></ul>
@@ -122,5 +138,8 @@
   </footer>
 
   <script src="app.js"></script>
+  <script src="ai/tools.js"></script>
+  <script src="ai/agent.js"></script>
+  <script src="ai/coach-ui.js"></script>
 </body>
 </html>

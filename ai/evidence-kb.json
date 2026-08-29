@@ -1,0 +1,16 @@
+[
+  {"id":"cico","claim":"Calorie deficit required for fat loss; surplus for gain","verdict":"TRUE","note":"First law; all diets equal at matched calories (Hall Lancet 2011).","cite":"Hall KD Lancet 2011"},
+  {"id":"plateau","claim":"Metabolic adaptation on deficit (thyroid/leptin/testosterone drop)","verdict":"PARTIALLY TRUE","note":"Adaptive thermogenesis is real but modest (Martins Br J Nutr 2022) — not a hard 'starvation mode'. Reverse-diet 100-150 kcal/week protocol is heuristic, not RCT-proven.","cite":"Martins et al. Br J Nutr 2022"},
+  {"id":"protein","claim":"Protein 1.6-2.2 g/kg preserves muscle on cut","verdict":"TRUE","note":"ISSN position stand: 1.4-2.0 total, 2.3-3.1 g/kg FFM when dieting.","cite":"Jäger et al. JISSN 2017"},
+  {"id":"creatine","claim":"Creatine monohydrate is well-researched, intracellular water","verdict":"TRUE","note":"CP->ATP; not subcutaneous bloat (ISSN creatine stand).","cite":"PMC3407788"},
+  {"id":"bcaa","claim":"BCAA unnecessary if protein adequate","verdict":"TRUE","note":"Whey > BCAA for MPS (Jackman 2017; Morton 2018 meta).","cite":"Morton et al. 2018"},
+  {"id":"cardio-myth","claim":"LISS raises cortisol -> eats muscle; HIIT spares muscle","verdict":"MYTH","note":"Both raise cortisol acutely (HIIT often more). Muscle loss = deficit + no lifting + low protein, not cardio type (Tremblay 1994 mis-cited).","cite":"Tremblay et al. Metabolism 1994"},
+  {"id":"somatotypes","claim":"Ecto/endo/meso determine training response","verdict":"MYTH","note":"Sheldon 1940s descriptive, no predictive power.","cite":"NASM review"},
+  {"id":"water-fat","claim":"Drinking more water directly burns fat","verdict":"MYTH","note":"Small transient thermogenesis only (~20-100 kcal). Hydration helps function, not fat oxidation.","cite":"MedicalNewsToday"},
+  {"id":"zma","claim":"ZMA boosts testosterone","verdict":"MYTH","note":"Only fixes deficiency; no effect in replete (Wilborn 2004, Koehler 2009).","cite":"Wilborn 2004"},
+  {"id":"chromium","claim":"Chromium fixes metabolism","verdict":"OVERCLAIMED","note":"Essential in theory, no glycemic benefit in non-diabetics.","cite":"Althuis 2002"},
+  {"id":"keto-superior","claim":"Keto superior at matched calories/protein","verdict":"FALSE","note":"No superior fat loss at isocaloric (Bueno Br J Nutr 2013, Cochrane CD013334).","cite":"Bueno et al. 2013"},
+  {"id":"leptin-refeed","claim":"Refeed boosts leptin and accelerates loss","verdict":"PARTIALLY TRUE","note":"Refeeds raise leptin acutely (Dirlewanger Int J Obes 2000) but metabolic advantage is weak; mainly adherence.","cite":"Dirlewanger et al. 2000"},
+  {"id":"tut","claim":"Time-under-tension threshold drives growth","verdict":"FALSE","note":"No threshold; volume/effort matter (Schoenfeld 2015, Wilk 2021).","cite":"Schoenfeld 2015"},
+  {"id":"sustainability","claim":"Sustainability predicts long-term success","verdict":"TRUE","note":"Adherence > macro split (JAMA 2014).","cite":"Johnston et al. JAMA 2014"}
+]

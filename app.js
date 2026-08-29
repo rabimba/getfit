@@ -315,6 +315,24 @@ document.getElementById("logBtn").addEventListener("click", logEntry);
 
 document.getElementById("mythList").innerHTML = MYTHS.map(m => `<li>${m}</li>`).join("");
 
+// Expose engine for AI tools / agent (LiteRT Gemma 4 agentic workflows)
+function renderWithOverride(newTarget, aiNote) {
+  const user = readUser();
+  const c = compute(user);
+  const delta = newTarget - c.target;
+  // Re-render normally, then patch the target card and add an AI note
+  render(user);
+  const results = document.getElementById("results");
+  const banner = document.createElement("div");
+  banner.className = "metric";
+  banner.style.borderColor = "var(--accent)";
+  banner.innerHTML = `<div class="k">AI Coach adjustment <span class="badge">LiteRT · Gemma 4</span></div>
+    <div class="v">${newTarget} <small>kcal (${delta > 0 ? "+" : ""}${delta})</small></div>
+    <div class="note">${aiNote} — clamped to ≤200 kcal and grounded in evidence. Log weekly to refine.</div>`;
+  results.prepend(banner);
+}
+window.GetFit = { compute, computeBMR, generateWorkout, dietSuggestions, trainingSuggestions, readUser, render, renderWithOverride, loadProgress, saveInputs, restoreInputs };
+
 // initialise: restore saved inputs, default date, render, show progress
 restoreInputs();
 document.getElementById("progDate").value = new Date().toISOString().slice(0, 10);

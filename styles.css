@@ -129,5 +129,23 @@ input:focus, select:focus { border-color: var(--accent-2); }
 .myth-panel li { margin: 8px 0; font-size: 13px; break-inside: avoid; }
 .myth-panel li b { color: var(--warn); }
 
+.coach-panel { margin: 0 28px 20px; }
+.coach-head { display: flex; align-items: center; justify-content: space-between; }
+.coach-body { margin-top: 14px; }
+.coach-log { min-height: 110px; max-height: 360px; overflow-y: auto; background: var(--panel-2); border: 1px solid var(--border); border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 12px; }
+.bubble { padding: 10px 12px; border-radius: 10px; font-size: 14px; line-height: 1.45; }
+.bubble.user { background: #143020; align-self: flex-end; max-width: 82%; }
+.bubble.assistant { background: #182635; border: 1px solid var(--border); }
+.bubble.system { background: #1a2a1a; border: 1px solid #2a4a2a; font-size: 13px; }
+.tool-row { font-size: 12px; background: #0f1f2a; border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; margin-top: 8px; }
+.tool-row code { display: block; color: var(--accent-2); word-break: break-all; margin-top: 4px; }
+.tool-row .obs { color: var(--muted); margin-top: 4px; word-break: break-all; }
+.proposal { margin-top: 12px; background: #143020; border: 1px solid #2a5a2a; border-radius: 10px; padding: 12px; }
+.coach-input { display: grid; grid-template-columns: 1fr auto; gap: 10px; margin-top: 12px; }
+.coach-input textarea { background: var(--panel-2); border: 1px solid var(--border); color: var(--text); border-radius: 10px; padding: 10px 12px; resize: vertical; font-family: inherit; }
+.coach-input textarea:focus { outline: none; border-color: var(--accent-2); }
+.cta.small { padding: 10px 16px; font-size: 14px; margin-top: 0; }
+.trace { margin-top: 10px; }
+
 .foot { text-align: center; color: #5b6b7a; font-size: 12px; padding: 18px; }
 .badge { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 999px; background: #143020; color: var(--accent); margin-left: 8px; }
