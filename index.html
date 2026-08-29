@@ -96,6 +96,22 @@
     </section>
   </main>
 
+  <section class="panel progress-panel">
+    <h2>Progress tracker</h2>
+    <p class="hint">Log your weight over time. Saved locally in your browser (no account needed).</p>
+    <div class="grid">
+      <label>Date
+        <input type="date" id="progDate" />
+      </label>
+      <label>Weight (kg)
+        <input type="number" id="progWeight" min="35" max="250" step="0.1" placeholder="e.g. 74.5" />
+      </label>
+    </div>
+    <button id="logBtn" class="cta" style="margin-top:14px">Log entry</button>
+    <div id="progressOut" class="results-empty" style="margin-top:16px">No entries yet.</div>
+  </section>
+
+
   <section class="panel myth-panel">
     <h2>What this app deliberately ignores (and why)</h2>
     <ul id="mythList"></ul>
