@@ -1,0 +1,7 @@
+# Source PDF and extracted text (not part of the app)
+GetShredded_Book-19-09-2019_NEW_Updated_V4_FINAL.pdf
+getfit_text.txt
+
+# OS / editor noise
+.DS_Store
+*.swp
